@@ -5,10 +5,10 @@ Node.js (v12.x.x or later)
 npm (v6.x.x or later) or yarn
 
 Install dependencies
-npm install
+`npm install`
 
 Start Server
-npm start
+`npm start`
 
 Server Running 
-http://localhost:3000
+`http://localhost:3000`
