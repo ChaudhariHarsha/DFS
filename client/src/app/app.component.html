@@ -1,0 +1,15 @@
+<div class="grid">
+  <div *ngFor="let row of grid; let i = index" class="row">
+    <div
+      *ngFor="let cell of row; let j = index"
+      class="cell"
+      [class.start]="startPointCell(i, j)"
+      [class.end]="endPointCell(i, j)"
+      [class.path]="pathCell(i, j)"
+      (click)="onClickTile(i, j)"
+    ></div>
+  </div>
+</div>
+
+<button (click)="findShortestPath()" class="action-button">Get Shortest Path</button>
+<button (click)="clear()" class="action-button">Clear</button>
